@@ -1,0 +1,3 @@
+@model IEnumerable<AbarrotesInventory.Domain.Entities.Purchase>
+@* archivo: index.cshtml | función: vista principal del módulo purchases, utilizada para mostrar y administrar sus registros. *@
+@{ViewData["Title"]="Compras";}<div class="d-flex justify-content-between"><h2>Compras</h2><a class="btn btn-primary" href="/Purchases/Create">Registrar compra</a></div><table class="table mt-3"><thead><tr><th>Número</th><th>Fecha</th><th>Proveedor</th><th>Total</th></tr></thead><tbody>@foreach(var p in Model){<tr><td>@p.Number</td><td>@p.Date</td><td>@p.Supplier?.Name</td><td>S/ @p.Total.ToString("N2")</td></tr>}</tbody></table>

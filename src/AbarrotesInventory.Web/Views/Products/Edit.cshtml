@@ -1,0 +1,17 @@
+@model AbarrotesInventory.Domain.Entities.Product
+@* archivo: edit.cshtml | función: vista del módulo products utilizada para modificar un registro existente. *@
+@{ViewData["Title"]="Editar producto";}
+<h2>Editar producto</h2>
+<form method="post">
+<input type="hidden" asp-for="Id">
+<div class="row g-3">
+<div class="col-md-4"><label>Código</label><input class="form-control" asp-for="Code" required></div>
+<div class="col-md-8"><label>Nombre</label><input class="form-control" asp-for="Name" required></div>
+<div class="col-md-4"><label>Categoría</label><select class="form-select" asp-for="CategoryId" asp-items="@(new SelectList(ViewBag.Categories,"Id","Name",Model.CategoryId))"></select></div>
+<div class="col-md-4"><label>Precio compra</label><input class="form-control" asp-for="PurchasePrice"></div>
+<div class="col-md-4"><label>Precio venta</label><input class="form-control" asp-for="SalePrice"></div>
+<div class="col-md-4"><label>Stock</label><input class="form-control" asp-for="Stock"></div>
+<div class="col-md-4"><label>Stock mínimo</label><input class="form-control" asp-for="MinStock"></div>
+<div class="col-md-4"><label>Unidad</label><input class="form-control" asp-for="Unit"></div>
+</div><button class="btn btn-primary mt-3">Actualizar</button> <a class="btn btn-secondary mt-3" href="/Products">Cancelar</a>
+</form>

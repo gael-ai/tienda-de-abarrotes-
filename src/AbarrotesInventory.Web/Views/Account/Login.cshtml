@@ -1,0 +1,73 @@
+@model AbarrotesInventory.Web.Models.LoginViewModel
+@* archivo: login.cshtml | función: vista de inicio de sesión donde el usuario ingresa sus credenciales para acceder al sistema. *@
+@{
+    ViewData["Title"] = "Iniciar sesión";
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tienda de Abarrotes | Iniciar sesión</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+    <main class="ta-login-page">
+        <section class="ta-login-hero">
+            <div class="ta-hero-content">
+                <span class="ta-kicker">✦ Sistema de gestión comercial</span>
+                <h1 class="ta-hero-title">
+                    Tu negocio.<br />
+                    <span class="ta-gradient-text">Más rápido y bajo control.</span>
+                </h1>
+                <p class="ta-hero-copy">
+                    Administra productos, inventario, compras, ventas y clientes desde un solo lugar.
+                    Una experiencia moderna para tu Tienda de Abarrotes.
+                </p>
+                <div class="ta-feature-row">
+                    <span class="ta-feature">📦 Inventario en tiempo real</span>
+                    <span class="ta-feature">🛒 Ventas y compras</span>
+                    <span class="ta-feature">📊 Control del negocio</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="ta-login-panel">
+            <div class="ta-login-card">
+                <div class="ta-login-logo">TA</div>
+                <h1>Bienvenido</h1>
+                <p class="text-secondary mb-4">Ingresa tus credenciales para continuar.</p>
+
+                <form asp-action="Login" method="post">
+                    <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                    <div class="mb-3">
+                        <label asp-for="Username" class="form-label fw-semibold">Usuario</label>
+                        <input asp-for="Username" class="form-control" placeholder="Ingresa tu usuario" autocomplete="username" />
+                        <span asp-validation-for="Username" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="Password" class="form-label fw-semibold">Contraseña</label>
+                        <input asp-for="Password" class="form-control" placeholder="Ingresa tu contraseña" autocomplete="current-password" />
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                    </div>
+                    
+                    <div class="form-check mb-4">
+                        <input asp-for="RememberMe" class="form-check-input" />
+                        <label asp-for="RememberMe" class="form-check-label">Recordarme</label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary w-100">
+                        Ingresar al sistema
+                    </button>
+
+                </form>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,6 @@
+// archivo: productscontroller.cs
+// función: controla el registro, edición y consulta de productos.
+
+using Microsoft.AspNetCore.Mvc;using Microsoft.AspNetCore.Authorization;using AbarrotesInventory.Application.Interfaces;using AbarrotesInventory.Domain.Entities;
+// espacio de nombres que organiza las clases del proyecto.
+namespace AbarrotesInventory.Web.Controllers;[Authorize] public class ProductsController(IInventoryService s):Controller { public async Task<IActionResult> Index()=>View(await s.GetProductsAsync()); [HttpGet] public async Task<IActionResult> Create(){ViewBag.Categories=await s.GetCategoriesAsync();return View(new Product());}[HttpPost] public async Task<IActionResult> Create(Product p){if(!ModelState.IsValid){ViewBag.Categories=await s.GetCategoriesAsync();return View(p);}await s.SaveProductAsync(p);return RedirectToAction(nameof(Index));}[HttpGet] public async Task<IActionResult> Edit(int id){var p=await s.GetProductAsync(id);if(p==null)return NotFound();ViewBag.Categories=await s.GetCategoriesAsync();return View(p);}[HttpPost] public async Task<IActionResult> Edit(Product p){await s.SaveProductAsync(p);return RedirectToAction(nameof(Index));}[HttpPost] public async Task<IActionResult> Delete(int id){await s.DeleteProductAsync(id);return RedirectToAction(nameof(Index));}}

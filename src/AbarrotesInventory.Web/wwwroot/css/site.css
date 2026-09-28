@@ -1,0 +1,172 @@
+/* archivo: site.css
+   función: define colores, tamaños, distribución, efectos, tarjetas, formularios y diseño visual del sistema. */
+
+:root{--nav:#111827;--nav2:#1f2937;--accent:#2563eb;--bg:#f3f6fb;--muted:#6b7280}*{box-sizing:border-box}body{margin:0;background:var(--bg);font-family:Inter,Segoe UI,Arial,sans-serif;color:#172033}.app-shell{display:flex;min-height:100vh}.sidebar{width:250px;background:linear-gradient(180deg,var(--nav),#0b1220);color:#fff;position:fixed;inset:0 auto 0 0;display:flex;flex-direction:column;padding:20px 14px}.brand{display:flex;gap:12px;align-items:center;padding:4px 8px 22px}.brand-icon{width:42px;height:42px;border-radius:12px;background:#2563eb;display:grid;place-items:center;font-size:22px}.brand strong,.brand small,.sidebar-user strong,.sidebar-user small{display:block}.brand small,.sidebar-user small{color:#9ca3af;font-size:11px}.side-nav{display:flex;flex-direction:column;gap:4px}.side-nav a{color:#d1d5db;text-decoration:none;padding:10px 12px;border-radius:9px;font-size:14px}.side-nav a:hover{background:var(--nav2);color:#fff}.side-nav i{width:24px}.nav-title{color:#6b7280;font-size:10px;font-weight:700;letter-spacing:1px;padding:18px 12px 5px}.sidebar-user{margin-top:auto;border-top:1px solid #263143;padding:16px 8px 0;display:flex;align-items:center;gap:9px}.sidebar-user>a{margin-left:auto;color:#9ca3af}.avatar{width:34px;height:34px;border-radius:50%;background:#374151;display:grid;place-items:center;font-weight:700}.content{margin-left:250px;width:calc(100% - 250px)}.topbar{height:76px;background:#fff;border-bottom:1px solid #e5e7eb;padding:14px 28px;display:flex;align-items:center;justify-content:space-between}.topbar small{color:var(--muted)}.page-content{padding:26px}.card{border:0;border-radius:14px;box-shadow:0 4px 18px rgba(16,24,40,.06)}.stat-card{padding:20px;display:flex;justify-content:space-between;align-items:center}.stat-card .icon{width:46px;height:46px;border-radius:12px;background:#eef2ff;display:grid;place-items:center;font-size:21px;color:#2563eb}.stat-card h3{margin:4px 0 0;font-weight:750}.stat-card small{color:var(--muted)}.table-card{background:#fff;border-radius:14px;padding:20px;box-shadow:0 4px 18px rgba(16,24,40,.06)}.table thead th{font-size:12px;color:#667085;text-transform:uppercase;background:#f8fafc;border-bottom:0}.table td{vertical-align:middle}.btn{border-radius:9px}.form-control,.form-select{border-radius:9px;min-height:42px}.page-title-row{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}.status-low{color:#b42318;background:#fef3f2;padding:4px 8px;border-radius:20px;font-size:12px}.status-ok{color:#027a48;background:#ecfdf3;padding:4px 8px;border-radius:20px;font-size:12px}.login-page{min-height:100vh;display:grid;grid-template-columns:1.1fr .9fr;background:#fff}.login-hero{background:linear-gradient(135deg,#111827,#1d4ed8);color:#fff;padding:70px;display:flex;flex-direction:column;justify-content:center}.login-hero h1{font-size:46px;font-weight:800}.login-panel{display:grid;place-items:center;padding:30px}.login-card{width:min(420px,100%)}@media(max-width:900px){.sidebar{width:76px}.brand div:last-child,.side-nav a{font-size:0}.side-nav i{font-size:20px}.nav-title,.sidebar-user div:not(.avatar){display:none}.content{margin-left:76px;width:calc(100% - 76px)}.login-page{grid-template-columns:1fr}.login-hero{display:none}}
+
+
+/* =========================================================
+   TIENDA DE ABARROTES — UI MODERNA 3D / GLASS
+   ========================================================= */
+:root{
+  --ta-navy:#071a3d;
+  --ta-blue:#0d6efd;
+  --ta-cyan:#21d4fd;
+  --ta-violet:#6f42c1;
+  --ta-green:#20c997;
+  --ta-bg:#f3f7ff;
+  --ta-card:rgba(255,255,255,.88);
+  --ta-shadow:0 20px 55px rgba(15,40,90,.16);
+}
+html,body{min-height:100%}
+body{
+  background:
+    radial-gradient(circle at 8% 10%, rgba(33,212,253,.12), transparent 28rem),
+    radial-gradient(circle at 92% 20%, rgba(111,66,193,.12), transparent 28rem),
+    linear-gradient(135deg,#f8fbff 0%,#eef4ff 100%);
+  color:#15213b;
+}
+.navbar,.sidebar,.topbar{
+  backdrop-filter:blur(14px);
+  -webkit-backdrop-filter:blur(14px);
+}
+.card,.stat-card,.dashboard-card,.table-responsive{
+  border:1px solid rgba(255,255,255,.7)!important;
+  border-radius:20px!important;
+  box-shadow:var(--ta-shadow)!important;
+}
+.card{
+  background:var(--ta-card)!important;
+  transition:transform .25s ease,box-shadow .25s ease;
+}
+.card:hover{transform:translateY(-4px);box-shadow:0 26px 65px rgba(15,40,90,.20)!important}
+.btn{
+  border-radius:12px!important;
+  font-weight:700;
+  transition:transform .2s ease,box-shadow .2s ease;
+}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{
+  border:0!important;
+  background:linear-gradient(135deg,var(--ta-blue),var(--ta-violet))!important;
+  box-shadow:0 10px 24px rgba(13,110,253,.28);
+}
+.form-control,.form-select{
+  min-height:46px;
+  border-radius:12px!important;
+  border:1px solid #dce5f5!important;
+  box-shadow:inset 0 1px 2px rgba(20,40,80,.04);
+}
+.form-control:focus,.form-select:focus{
+  border-color:#7ba7ff!important;
+  box-shadow:0 0 0 .25rem rgba(13,110,253,.12)!important;
+}
+.table{vertical-align:middle}
+.table thead th{
+  background:#eef4ff;
+  color:#29416d;
+  border-bottom:0;
+}
+.badge{border-radius:999px;padding:.55em .8em}
+
+/* Login hero */
+.ta-login-page{
+  min-height:100vh;
+  display:grid;
+  grid-template-columns:minmax(0,1.15fr) minmax(380px,.85fr);
+  overflow:hidden;
+  background:#071a3d;
+}
+.ta-login-hero{
+  position:relative;
+  display:flex;
+  align-items:center;
+  padding:clamp(44px,7vw,100px);
+  color:white;
+  overflow:hidden;
+  isolation:isolate;
+  background:
+    linear-gradient(90deg,rgba(4,17,47,.94) 0%,rgba(9,38,96,.74) 55%,rgba(13,110,253,.22) 100%),
+    linear-gradient(135deg,#071a3d,#1147b9 65%,#6f42c1);
+}
+.ta-login-hero:before,.ta-login-hero:after{
+  content:"";
+  position:absolute;
+  border-radius:50%;
+  filter:blur(1px);
+  z-index:-1;
+}
+.ta-login-hero:before{
+  width:430px;height:430px;right:-100px;top:-120px;
+  background:radial-gradient(circle at 35% 35%,rgba(33,212,253,.9),rgba(13,110,253,.28) 42%,transparent 68%);
+  animation:taFloat 8s ease-in-out infinite;
+}
+.ta-login-hero:after{
+  width:360px;height:360px;left:18%;bottom:-190px;
+  background:radial-gradient(circle at 45% 35%,rgba(140,82,255,.75),rgba(111,66,193,.22) 48%,transparent 70%);
+  animation:taFloat 10s ease-in-out infinite reverse;
+}
+.ta-hero-content{max-width:760px;position:relative;z-index:2}
+.ta-kicker{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:8px 13px;border-radius:999px;
+  background:rgba(255,255,255,.13);
+  border:1px solid rgba(255,255,255,.24);
+  font-size:.8rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;
+}
+.ta-hero-title{
+  margin:24px 0 16px;
+  font-size:clamp(2.7rem,5vw,5.5rem);
+  line-height:.96;font-weight:900;letter-spacing:-.045em;
+  text-shadow:0 18px 45px rgba(0,0,0,.28);
+}
+.ta-gradient-text{
+  background:linear-gradient(90deg,#fff,#70e7ff 45%,#bca5ff);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.ta-hero-copy{font-size:1.08rem;line-height:1.8;color:rgba(255,255,255,.76);max-width:650px}
+.ta-feature-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.ta-feature{
+  padding:11px 15px;border-radius:14px;
+  background:rgba(255,255,255,.1);
+  border:1px solid rgba(255,255,255,.17);
+  box-shadow:0 12px 30px rgba(0,0,0,.12);
+}
+.ta-login-panel{
+  display:flex;align-items:center;justify-content:center;
+  padding:42px;
+  background:
+    radial-gradient(circle at 100% 0,rgba(33,212,253,.13),transparent 22rem),
+    #f8fbff;
+}
+.ta-login-card{
+  width:min(100%,480px);
+  padding:42px;
+  border-radius:28px;
+  background:rgba(255,255,255,.9);
+  border:1px solid rgba(255,255,255,.9);
+  box-shadow:0 35px 80px rgba(18,50,110,.18), inset 0 1px 0 #fff;
+  transform:perspective(1100px) rotateY(-1.2deg);
+}
+.ta-login-logo{
+  width:58px;height:58px;border-radius:18px;
+  display:grid;place-items:center;
+  color:white;font-size:1.7rem;font-weight:900;
+  background:linear-gradient(135deg,var(--ta-cyan),var(--ta-blue) 48%,var(--ta-violet));
+  box-shadow:0 14px 28px rgba(13,110,253,.30);
+  margin-bottom:22px;
+}
+.ta-login-card h1{font-weight:900;letter-spacing:-.035em;margin-bottom:8px}
+.ta-login-card .btn-primary{min-height:50px}
+.ta-demo{
+  margin-top:18px;padding:14px 16px;border-radius:14px;
+  background:#f4f7fd;border:1px solid #e4ebf7;color:#60708d;
+}
+@keyframes taFloat{50%{transform:translate3d(0,18px,0) scale(1.04)}}
+@media(max-width:900px){
+  .ta-login-page{grid-template-columns:1fr}
+  .ta-login-hero{min-height:42vh;padding:44px 28px}
+  .ta-hero-title{font-size:3rem}
+  .ta-login-panel{padding:28px 18px}
+  .ta-login-card{transform:none;padding:30px}
+}
+\n\n/* Login alignment refinement */\n.ta-login-panel{padding:clamp(24px,4vw,56px)}\n.ta-login-card{width:min(100%,460px);padding:40px 42px;transform:none}\n.ta-login-card form{width:100%}\n.ta-login-card .mb-3{margin-bottom:18px!important}\n.ta-login-card .form-label{display:block;margin-bottom:8px}\n.ta-login-card .form-control{display:block;width:100%;min-height:50px;padding:12px 15px}\n.ta-login-card .form-check{display:flex;align-items:center;gap:9px;margin:2px 0 22px!important;padding-left:0}\n.ta-login-card .form-check-input{position:static;float:none;margin:0;width:18px;height:18px;flex:0 0 18px}\n.ta-login-card .form-check-label{margin:0;line-height:1.2}\n.ta-login-card .btn-primary{display:block;width:100%;min-height:52px;margin-top:2px}\n.ta-login-card .text-danger:empty{display:none}\n@media(max-width:900px){.ta-login-card{width:min(100%,500px);padding:32px 28px}}\n

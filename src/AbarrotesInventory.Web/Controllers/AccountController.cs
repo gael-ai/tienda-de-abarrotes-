@@ -1,0 +1,6 @@
+// archivo: accountcontroller.cs
+// función: controla el inicio y cierre de sesión de los usuarios.
+
+using Microsoft.AspNetCore.Authentication;using Microsoft.AspNetCore.Authentication.Cookies;using Microsoft.AspNetCore.Mvc;using System.Security.Claims;using AbarrotesInventory.Infrastructure.Data;using Microsoft.EntityFrameworkCore;using AbarrotesInventory.Web.Models;
+// espacio de nombres que organiza las clases del proyecto.
+namespace AbarrotesInventory.Web.Controllers; public class AccountController(AppDbContext db):Controller { [HttpGet] public IActionResult Login()=>View(); [HttpPost] public async Task<IActionResult> Login(LoginViewModel m){var u=await db.Users.Include(x=>x.Role).FirstOrDefaultAsync(x=>x.Username==m.Username&&x.Active);if(u==null||u.PasswordHash!=m.Password){ModelState.AddModelError("","Credenciales incorrectas");return View(m);}var claims=new[]{new Claim(ClaimTypes.Name,u.Username),new Claim(ClaimTypes.Role,u.Role?.Name??"")};await HttpContext.SignInAsync("Cookies",new ClaimsPrincipal(new ClaimsIdentity(claims,"Cookies")),new AuthenticationProperties{IsPersistent=m.RememberMe});return RedirectToAction("Index","Home");} public async Task<IActionResult> Logout(){await HttpContext.SignOutAsync("Cookies");return RedirectToAction("Login");} public IActionResult Denied()=>Content("Acceso denegado"); }

@@ -1,0 +1,2 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- archivo de proyecto: define el framework, referencias y paquetes necesarios para esta capa. --><PropertyGroup><TargetFramework>net8.0</TargetFramework><Nullable>enable</Nullable><ImplicitUsings>enable</ImplicitUsings></PropertyGroup><ItemGroup><ProjectReference Include="..\AbarrotesInventory.Domain\AbarrotesInventory.Domain.csproj" /></ItemGroup></Project>

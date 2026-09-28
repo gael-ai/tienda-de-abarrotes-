@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "AbarrotesInventory.Application/1.0.0": {
+        "dependencies": {
+          "AbarrotesInventory.Domain": "1.0.0"
+        },
+        "runtime": {
+          "AbarrotesInventory.Application.dll": {}
+        }
+      },
+      "AbarrotesInventory.Domain/1.0.0": {
+        "runtime": {
+          "AbarrotesInventory.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AbarrotesInventory.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AbarrotesInventory.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,7 @@
+// archivo: dbinitializer.cs
+// función: verifica e inicializa datos básicos necesarios para utilizar el sistema.
+
+using AbarrotesInventory.Domain.Entities; using Microsoft.EntityFrameworkCore;
+// espacio de nombres que organiza las clases del proyecto.
+namespace AbarrotesInventory.Infrastructure.Data;
+public static class DbInitializer { public static async Task InitializeAsync(AppDbContext db){await db.Database.EnsureCreatedAsync(); if(!await db.Roles.AnyAsync()){var admin=new Role{Name="ADMINISTRADOR"};var cashier=new Role{Name="CAJERO"};db.Roles.AddRange(admin,cashier);db.Users.Add(new User{Username="admin",PasswordHash="admin123",FullName="Administrador",Email="admin@local",Role=admin});db.Categories.AddRange(new Category{Name="Abarrotes"},new Category{Name="Bebidas"},new Category{Name="Limpieza"}); db.Suppliers.Add(new Supplier{Name="Distribuidora Principal",TaxId="20123456789",Phone="999111222",Email="proveedor@local.com",Address="Lima"}); db.Customers.Add(new Customer{Name="Cliente General",Document="00000000",Phone="999000000",Email="cliente@local.com",Address="Lima"}); await db.SaveChangesAsync();} if(!await db.Products.AnyAsync()){var cat=await db.Categories.FirstAsync();db.Products.AddRange(new Product{Code="P001",Name="Arroz 1kg",CategoryId=cat.Id,PurchasePrice=3.20m,SalePrice=4.50m,Stock=50,MinStock=10},new Product{Code="P002",Name="Azúcar 1kg",CategoryId=cat.Id,PurchasePrice=3.00m,SalePrice=4.20m,Stock=40,MinStock=10});await db.SaveChangesAsync();}} }

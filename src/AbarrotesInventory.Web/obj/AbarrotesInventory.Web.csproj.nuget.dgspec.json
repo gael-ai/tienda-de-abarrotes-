@@ -1,0 +1,312 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\ASUS\\Downloads\\Tienda_de_Abarrotes_COMENTADO\\src\\AbarrotesInventory.Web\\AbarrotesInventory.Web.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\ASUS\\Downloads\\Tienda_de_Abarrotes_COMENTADO\\src\\AbarrotesInventory.Application\\AbarrotesInventory.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ASUS\\Downloads\\Tienda_de_Abarrotes_COMENTADO\\src\\AbarrotesInventory.Application\\AbarrotesInventory.Application.csproj",
+        "projectName": "AbarrotesInventory.Application",
+        "projectPath": "C:\\Users\\ASUS\\Downloads\\Tienda_de_Abarrotes_COMENTADO\\src\\AbarrotesInventory.Application\\AbarrotesInventory.Application.csproj",
+        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ASUS\\Downloads\\Tienda_de_Abarrotes_COMENTADO\\src\\AbarrotesInventory.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "framework": "net8.0",
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\ASUS\\Downloads\\Tienda_de_Abarrotes_COMENTADO\\src\\AbarrotesInventory.Domain\\AbarrotesInventory.Domain.csproj": {
+                "projectPath": "C:\\Users\\ASUS\\Downloads\\Tienda_de_Abarrotes_COMENTADO\\src\\AbarrotesInventory.Domain\\AbarrotesInventory.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.400"
+      },
+      "frameworks": {
+        "net8.0": {
+          "framework": "net8.0",
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.400/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ASUS\\Downloads\\Tienda_de_Abarrotes_COMENTADO\\src\\AbarrotesInventory.Domain\\AbarrotesInventory.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ASUS\\Downloads\\Tienda_de_Abarrotes_COMENTADO\\src\\AbarrotesInventory.Domain\\AbarrotesInventory.Domain.csproj",
+        "projectName": "AbarrotesInventory.Domain",
+        "projectPath": "C:\\Users\\ASUS\\Downloads\\Tienda_de_Abarrotes_COMENTADO\\src\\AbarrotesInventory.Domain\\AbarrotesInventory.Domain.csproj",
+        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ASUS\\Downloads\\Tienda_de_Abarrotes_COMENTADO\\src\\AbarrotesInventory.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "framework": "net8.0",
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.400"
+      },
+      "frameworks": {
+        "net8.0": {
+          "framework": "net8.0",
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.400/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ASUS\\Downloads\\Tienda_de_Abarrotes_COMENTADO\\src\\AbarrotesInventory.Infrastructure\\AbarrotesInventory.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ASUS\\Downloads\\Tienda_de_Abarrotes_COMENTADO\\src\\AbarrotesInventory.Infrastructure\\AbarrotesInventory.Infrastructure.csproj",
+        "projectName": "AbarrotesInventory.Infrastructure",
+        "projectPath": "C:\\Users\\ASUS\\Downloads\\Tienda_de_Abarrotes_COMENTADO\\src\\AbarrotesInventory.Infrastructure\\AbarrotesInventory.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ASUS\\Downloads\\Tienda_de_Abarrotes_COMENTADO\\src\\AbarrotesInventory.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "framework": "net8.0",
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\ASUS\\Downloads\\Tienda_de_Abarrotes_COMENTADO\\src\\AbarrotesInventory.Application\\AbarrotesInventory.Application.csproj": {
+                "projectPath": "C:\\Users\\ASUS\\Downloads\\Tienda_de_Abarrotes_COMENTADO\\src\\AbarrotesInventory.Application\\AbarrotesInventory.Application.csproj"
+              },
+              "C:\\Users\\ASUS\\Downloads\\Tienda_de_Abarrotes_COMENTADO\\src\\AbarrotesInventory.Domain\\AbarrotesInventory.Domain.csproj": {
+                "projectPath": "C:\\Users\\ASUS\\Downloads\\Tienda_de_Abarrotes_COMENTADO\\src\\AbarrotesInventory.Domain\\AbarrotesInventory.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.400"
+      },
+      "frameworks": {
+        "net8.0": {
+          "framework": "net8.0",
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.13, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.400/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ASUS\\Downloads\\Tienda_de_Abarrotes_COMENTADO\\src\\AbarrotesInventory.Web\\AbarrotesInventory.Web.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ASUS\\Downloads\\Tienda_de_Abarrotes_COMENTADO\\src\\AbarrotesInventory.Web\\AbarrotesInventory.Web.csproj",
+        "projectName": "AbarrotesInventory.Web",
+        "projectPath": "C:\\Users\\ASUS\\Downloads\\Tienda_de_Abarrotes_COMENTADO\\src\\AbarrotesInventory.Web\\AbarrotesInventory.Web.csproj",
+        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ASUS\\Downloads\\Tienda_de_Abarrotes_COMENTADO\\src\\AbarrotesInventory.Web\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "framework": "net8.0",
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\ASUS\\Downloads\\Tienda_de_Abarrotes_COMENTADO\\src\\AbarrotesInventory.Application\\AbarrotesInventory.Application.csproj": {
+                "projectPath": "C:\\Users\\ASUS\\Downloads\\Tienda_de_Abarrotes_COMENTADO\\src\\AbarrotesInventory.Application\\AbarrotesInventory.Application.csproj"
+              },
+              "C:\\Users\\ASUS\\Downloads\\Tienda_de_Abarrotes_COMENTADO\\src\\AbarrotesInventory.Infrastructure\\AbarrotesInventory.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\ASUS\\Downloads\\Tienda_de_Abarrotes_COMENTADO\\src\\AbarrotesInventory.Infrastructure\\AbarrotesInventory.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.400"
+      },
+      "frameworks": {
+        "net8.0": {
+          "framework": "net8.0",
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.400/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

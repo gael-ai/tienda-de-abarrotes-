@@ -1,0 +1,20 @@
+{
+  "ConnectionStrings": {                 // configuración de conexiones a bases de datos
+    "DefaultConnection":                 // nombre de la conexión principal
+      "Server=localhost;                  // servidor donde está instalado mysql
+       Port=3306;                         // puerto utilizado por mysql
+       Database=AbarrotesInventoryDB;    // nombre de la base de datos del sistema
+       User=root;                         // usuario utilizado para conectarse a mysql
+       Password=root;                     // contraseña del usuario de mysql
+       CharSet=utf8mb4;"                  // codificación para tildes, ñ y caracteres especiales
+  },
+  "Logging": {                            // configuración de mensajes del sistema
+    "LogLevel": {                         // define el nivel de información mostrado
+      "Default": "Information",           // muestra información general, advertencias y errores
+      "Microsoft.AspNetCore": "Warning"   // muestra advertencias y errores de asp.net core
+    }
+  },
+  "AllowedHosts": "*"                     // permite solicitudes desde cualquier host
+}
+
+nota: este archivo es solo explicativo. el appsettings.json real se mantiene sin comentarios para conservar un json válido.
